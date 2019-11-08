@@ -1,35 +1,30 @@
 // Navigation code here
 
 .navigation-container {
-  
+  .flexbox(column, flex-start, center);
   width: 100%;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: lightgray;
-
+  background-color: whitesmoke;
+  
   .nav-links {
-    display: flex;
-    justify-content: space-between;
+    .flexbox(row, space-between, center);
     width: 400px;
     padding-top: 20px;
 
     a {
       font-size: 1.6rem;
-      color: black;
-      text-decoration: none;
+      .link();
     }
   }
 }
 
 .between-nav-header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .flexbox(column, flex-start, center);
+  width: 100%;
 
-    img {
-      border-radius: 10px;
-    }
+  img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+  }
 }
