@@ -1,1 +1,31 @@
 // Navigation code here
+
+.navigation-container {
+  .flexbox(column, flex-start, center);
+  width: 100%;
+  padding: 20px;
+  background-color: whitesmoke;
+  
+  .nav-links {
+    .flexbox(row, space-between, center);
+    width: 400px;
+    padding-top: 20px;
+
+    a {
+      font-size: 1.6rem;
+      .link();
+    }
+  }
+}
+
+.between-nav-header {
+  .flexbox(column, flex-start, center);
+  width: 100%;
+
+  img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+  }
+}
